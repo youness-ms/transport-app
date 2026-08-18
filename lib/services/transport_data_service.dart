@@ -1,5 +1,5 @@
 import 'dart:convert';
-
+import '../models/famous_place.dart';
 import 'package:flutter/services.dart';
 import 'package:latlong2/latlong.dart';
 
@@ -7,6 +7,7 @@ import '../models/bus_line.dart';
 import '../models/bus_direction.dart';
 import '../models/bus_stop.dart';
 import '../models/transport_type.dart';
+List<FamousPlace> loadedPlaces = [];
 class TransportDataService {
   static Future<List<BusLine>> loadLines() async {
     final jsonString =
@@ -14,6 +15,13 @@ class TransportDataService {
 
     final Map<String, dynamic> data =
     jsonDecode(jsonString);
+    loadedPlaces = (data['places'] as List<dynamic>? ?? [])
+        .map(
+          (place) => FamousPlace.fromJson(
+        place as Map<String, dynamic>,
+      ),
+    )
+        .toList();
 
     final List<dynamic> linesJson =
     data['lines'];

@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:sensors_plus/sensors_plus.dart';
 import 'dart:math' as math;
+import '../models/famous_place.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
@@ -666,6 +667,58 @@ class _MapScreenState extends State<MapScreen> with WidgetsBindingObserver {
                           );
                   },
                   ),
+                ...loadedPlaces.map(
+                      (place) {
+                    return Marker(
+                      point: LatLng(
+                        place.latitude,
+                        place.longitude,
+                      ),
+                      width: 45,
+                      height: 45,
+                      child: GestureDetector(
+                        onTap: () {
+                          showModalBottomSheet(
+                            context: context,
+                            builder: (context) {
+                              return SafeArea(
+                                child: Padding(
+                                  padding: const EdgeInsets.all(20),
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        place.name,
+                                        style: const TextStyle(
+                                          fontSize: 22,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      const SizedBox(height: 8),
+                                      Text(
+                                        place.category,
+                                        style: TextStyle(
+                                          fontSize: 16,
+                                          color: Colors.grey.shade600,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              );
+                            },
+                          );
+                        },
+                        child: const Icon(
+                          Icons.place,
+                          color: Colors.deepPurple,
+                          size: 38,
+                        ),
+                      ),
+                    );
+                  },
+                ),
 
                 // Destination marker
                 if (destinationPoint != null)
@@ -696,6 +749,7 @@ class _MapScreenState extends State<MapScreen> with WidgetsBindingObserver {
                             onTap: () {
                               setState(() {
                                 selectedStop =stop;
+
                               });
                             },
                             child: Icon(

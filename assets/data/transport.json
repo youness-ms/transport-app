@@ -1220,5 +1220,97 @@
         }
       ]
     }
+  ],
+  "places": [
+    {
+      "name": "Place 1er Novembre (Place Carnot)",
+      "category": "landmark",
+      "latitude": 35.19039,
+      "longitude": -0.63310
+    },
+    {
+      "name": "Théâtre Régional de Sidi Bel Abbès",
+      "category": "culture",
+      "latitude": 35.19112,
+      "longitude": -0.63322
+    },
+    {
+      "name": "Jardin Public",
+      "category": "park",
+      "latitude": 35.19009,
+      "longitude": -0.64229
+    },
+    {
+      "name": "Stade 24 Février 1956",
+      "category": "sports",
+      "latitude": 35.18503,
+      "longitude": -0.62214
+    },
+    {
+      "name": "Place 5 Juillet Rocher",
+      "category": "park",
+      "latitude": 35.21452,
+      "longitude": -0.61067
+    },
+    {
+      "name": "Gare de Sidi Bel Abbès",
+      "category": "transport",
+      "latitude": 35.19929,
+      "longitude": -0.63840
+    },
+    {
+      "name": "Musée du Moudjahid",
+      "category": "museum",
+      "latitude": 35.17935,
+      "longitude": -0.63823
+    },
+    {
+      "name": "Musée d'Agriculture de Sidi Bel Abbès",
+      "category": "museum",
+      "latitude": 35.17853,
+      "longitude": -0.66030
+    },
+    {
+      "name": "Université Djillali Liabès - Faculté des Sciences Exactes",
+      "category": "education",
+      "latitude": 35.20296,
+      "longitude": -0.63996
+    },
+    {
+      "name": "Cinema Vox",
+      "category": "entertainment",
+      "latitude": 35.19266,
+      "longitude": -0.63407
+    },
+    {
+      "name": "Mosquée Beni Amer",
+      "category": "religious",
+      "latitude": 35.20463,
+      "longitude": -0.61743
+    },
+    {
+      "name": "Mosquée Ibrahim el-khalil",
+      "category": "religious",
+      "latitude": 35.20953,
+      "longitude": -0.61458
+    },
+    {
+      "name": "Petit Paris",
+      "category": "cafe",
+      "latitude": 35.18231,
+      "longitude": -0.62624
+    },
+    {
+      "name": "Boulangerie Bouadjaj",
+      "category": "food",
+      "latitude": 35.18076,
+      "longitude": -0.62749
+    },
+    {
+      "name": "Café Palmier",
+      "category": "cafe",
+      "latitude": 35.21789,
+      "longitude": -0.61267
+    }
   ]
 }

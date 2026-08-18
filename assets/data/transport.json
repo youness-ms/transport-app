@@ -1,0 +1,1224 @@
+{
+  "lines": [
+    {
+      "name": "Line 3b",
+      "type": "bus",
+      "directions": [
+        {
+          "destination": "Quartier de 100 logements sociaux",
+          "stops": [
+            {
+              "name": "station N 17",
+              "latitude": 35.19320263913792,
+              "longitude": -0.6320954113323786
+            },
+            {
+              "name": "library cheikh mohammed qubati",
+              "latitude": 35.198491113655635,
+              "longitude": -0.6355972853937675
+            },
+            {
+              "name": "departement of science exact",
+              "latitude": 35.201690485957904,
+              "longitude": -0.6408049048810628
+            },
+            {
+              "name": "aamara 9adori",
+              "latitude": 35.20279915822033,
+              "longitude": -0.6465123481428671
+            },
+            {
+              "name": "cite 2000",
+              "latitude": 35.200108830801966,
+              "longitude": -0.6552546228099709
+            },
+            {
+              "name": "cite 800 aadl",
+              "latitude": 35.210984973868285,
+              "longitude": -0.6521690697967577
+            },
+            {
+              "name": "Quartier de 100 logements sociaux",
+              "latitude": 35.21460904697148,
+              "longitude": -0.6497830733099109
+            }
+          ],
+          "routePoints": [
+            {
+              "latitude": 35.19320263913792,
+              "longitude": -0.6320954113323786
+            },
+            {
+              "latitude": 35.198491113655635,
+              "longitude": -0.6355972853937675
+            },
+            {
+              "latitude": 35.201690485957904,
+              "longitude": -0.6408049048810628
+            },
+            {
+              "latitude": 35.20279915822033,
+              "longitude": -0.6465123481428671
+            },
+            {
+              "latitude": 35.200108830801966,
+              "longitude": -0.6552546228099709
+            },
+            {
+              "latitude": 35.210984973868285,
+              "longitude": -0.6521690697967577
+            },
+            {
+              "latitude": 35.21460904697148,
+              "longitude": -0.6497830733099109
+            }
+          ]
+        },
+        {
+          "destination": "station N 17",
+          "stops": [
+            {
+              "name": "Quartier de 100 logements sociaux",
+              "latitude": 35.21460904697148,
+              "longitude": -0.6497830733099109
+            },
+            {
+              "name": "cite 800 aadl",
+              "latitude": 35.210984973868285,
+              "longitude": -0.6521690697967577
+            },
+            {
+              "name": "cite 2000",
+              "latitude": 35.200108830801966,
+              "longitude": -0.6552546228099709
+            },
+            {
+              "name": "aamara 9adori",
+              "latitude": 35.20279915822033,
+              "longitude": -0.6465123481428671
+            },
+            {
+              "name": "departement of science exact",
+              "latitude": 35.201690485957904,
+              "longitude": -0.6408049048810628
+            },
+            {
+              "name": "library cheikh mohammed qubati",
+              "latitude": 35.198491113655635,
+              "longitude": -0.6355972853937675
+            },
+            {
+              "name": "station N 17",
+              "latitude": 35.19320263913792,
+              "longitude": -0.6320954113323786
+            }
+          ],
+          "routePoints": [
+            {
+              "latitude": 35.21460904697148,
+              "longitude": -0.6497830733099109
+            },
+            {
+              "latitude": 35.210984973868285,
+              "longitude": -0.6521690697967577
+            },
+            {
+              "latitude": 35.200108830801966,
+              "longitude": -0.6552546228099709
+            },
+            {
+              "latitude": 35.20279915822033,
+              "longitude": -0.6465123481428671
+            },
+            {
+              "latitude": 35.201690485957904,
+              "longitude": -0.6408049048810628
+            },
+            {
+              "latitude": 35.198491113655635,
+              "longitude": -0.6355972853937675
+            },
+            {
+              "latitude": 35.19320263913792,
+              "longitude": -0.6320954113323786
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Line 9",
+      "type": "bus",
+      "directions": [
+        {
+          "destination": "rouchi",
+          "stops": [
+            {
+              "name": "station N 17",
+              "latitude": 35.19320263913792,
+              "longitude": -0.6320954113323786
+            },
+            {
+              "name": "Fonds de securite sociale",
+              "latitude": 35.19510524278805,
+              "longitude": -0.6237175441793387
+            },
+            {
+              "name": "library of moliir",
+              "latitude": 35.19616064239582,
+              "longitude": -0.6222646181807058
+            },
+            {
+              "name": "Abattoir municipale",
+              "latitude": 35.20014768510328,
+              "longitude": -0.6144549681223622
+            },
+            {
+              "name": "civil protection",
+              "latitude": 35.204367130639596,
+              "longitude": -0.613642635264522
+            },
+            {
+              "name": "galmi station",
+              "latitude": 35.21351480981426,
+              "longitude": -0.6154466758419864
+            },
+            {
+              "name": "maachou high school",
+              "latitude": 35.21833419057983,
+              "longitude": -0.6057096265669349
+            },
+            {
+              "name": "quartier residentiel 200 rouchi",
+              "latitude": 35.22108875464268,
+              "longitude": -0.6072294019554115
+            }
+          ],
+          "routePoints": [
+            {
+              "latitude": 35.19320263913792,
+              "longitude": -0.6320954113323786
+            },
+            {
+              "latitude": 35.19510524278805,
+              "longitude": -0.6237175441793387
+            },
+            {
+              "latitude": 35.19616064239582,
+              "longitude": -0.6222646181807058
+            },
+            {
+              "latitude": 35.20014768510328,
+              "longitude": -0.6144549681223622
+            },
+            {
+              "latitude": 35.204367130639596,
+              "longitude": -0.613642635264522
+            },
+            {
+              "latitude": 35.21351480981426,
+              "longitude": -0.6154466758419864
+            },
+            {
+              "latitude": 35.21833419057983,
+              "longitude": -0.6057096265669349
+            },
+            {
+              "latitude": 35.22108875464268,
+              "longitude": -0.6072294019554115
+            }
+          ]
+        },
+        {
+          "destination": "station N 17",
+          "stops": [
+            {
+              "name": "quartier residentiel 200 rouchi",
+              "latitude": 35.22108875464268,
+              "longitude": -0.6072294019554115
+            },
+            {
+              "name": "maachou high school",
+              "latitude": 35.21833419057983,
+              "longitude": -0.6057096265669349
+            },
+            {
+              "name": "galmi station",
+              "latitude": 35.21351480981426,
+              "longitude": -0.6154466758419864
+            },
+            {
+              "name": "civil protection",
+              "latitude": 35.204367130639596,
+              "longitude": -0.613642635264522
+            },
+            {
+              "name": "Abattoir municipale",
+              "latitude": 35.20014768510328,
+              "longitude": -0.6144549681223622
+            },
+            {
+              "name": "library of moliir",
+              "latitude": 35.19616064239582,
+              "longitude": -0.6222646181807058
+            },
+            {
+              "name": "Fonds de securite sociale",
+              "latitude": 35.19510524278805,
+              "longitude": -0.6237175441793387
+            },
+            {
+              "name": "station N 17",
+              "latitude": 35.19320263913792,
+              "longitude": -0.6320954113323786
+            }
+          ],
+          "routePoints": [
+            {
+              "latitude": 35.22108875464268,
+              "longitude": -0.6072294019554115
+            },
+            {
+              "latitude": 35.21833419057983,
+              "longitude": -0.6057096265669349
+            },
+            {
+              "latitude": 35.21351480981426,
+              "longitude": -0.6154466758419864
+            },
+            {
+              "latitude": 35.204367130639596,
+              "longitude": -0.613642635264522
+            },
+            {
+              "latitude": 35.20014768510328,
+              "longitude": -0.6144549681223622
+            },
+            {
+              "latitude": 35.19616064239582,
+              "longitude": -0.6222646181807058
+            },
+            {
+              "latitude": 35.19510524278805,
+              "longitude": -0.6237175441793387
+            },
+            {
+              "latitude": 35.19320263913792,
+              "longitude": -0.6320954113323786
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Line 16",
+      "type": "bus",
+      "directions": [
+        {
+          "destination": "ben hamoda",
+          "stops": [
+            {
+              "name": "station N 17",
+              "latitude": 35.19320263913792,
+              "longitude": -0.6320954113323786
+            },
+            {
+              "name": "clinique de mqternite",
+              "latitude": 35.19245781174648,
+              "longitude": -0.6191429002547678
+            },
+            {
+              "name": "kazi meuble",
+              "latitude": 35.19300366822288,
+              "longitude": -0.6148996804615959
+            },
+            {
+              "name": "high school dar abid",
+              "latitude": 35.19957435684706,
+              "longitude": -0.6144485495233298
+            },
+            {
+              "name": "civil protection",
+              "latitude": 35.204367130639596,
+              "longitude": -0.613642635264522
+            },
+            {
+              "name": "galmi station",
+              "latitude": 35.21351480981426,
+              "longitude": -0.6154466758419864
+            },
+            {
+              "name": "Autorite fiscale",
+              "latitude": 35.21690539881199,
+              "longitude": -0.6149079401654168
+            },
+            {
+              "name": "ben hamoda",
+              "latitude": 35.21756399957514,
+              "longitude": -0.6224244427729064
+            }
+          ],
+          "routePoints": [
+            {
+              "latitude": 35.19320263913792,
+              "longitude": -0.6320954113323786
+            },
+            {
+              "latitude": 35.19245781174648,
+              "longitude": -0.6191429002547678
+            },
+            {
+              "latitude": 35.19300366822288,
+              "longitude": -0.6148996804615959
+            },
+            {
+              "latitude": 35.19957435684706,
+              "longitude": -0.6144485495233298
+            },
+            {
+              "latitude": 35.204367130639596,
+              "longitude": -0.613642635264522
+            },
+            {
+              "latitude": 35.21351480981426,
+              "longitude": -0.6154466758419864
+            },
+            {
+              "latitude": 35.21690539881199,
+              "longitude": -0.6149079401654168
+            },
+            {
+              "latitude": 35.21756399957514,
+              "longitude": -0.6224244427729064
+            }
+          ]
+        },
+        {
+          "destination": "station N 17",
+          "stops": [
+            {
+              "name": "ben hamoda",
+              "latitude": 35.21756399957514,
+              "longitude": -0.6224244427729064
+            },
+            {
+              "name": "Autorite fiscale",
+              "latitude": 35.21690539881199,
+              "longitude": -0.6149079401654168
+            },
+            {
+              "name": "galmi station",
+              "latitude": 35.21351480981426,
+              "longitude": -0.6154466758419864
+            },
+            {
+              "name": "civil protection",
+              "latitude": 35.204367130639596,
+              "longitude": -0.613642635264522
+            },
+            {
+              "name": "high school dar abid",
+              "latitude": 35.19957435684706,
+              "longitude": -0.6144485495233298
+            },
+            {
+              "name": "kazi meuble",
+              "latitude": 35.19300366822288,
+              "longitude": -0.6148996804615959
+            },
+            {
+              "name": "clinique de mqternite",
+              "latitude": 35.19245781174648,
+              "longitude": -0.6191429002547678
+            },
+            {
+              "name": "station N 17",
+              "latitude": 35.19320263913792,
+              "longitude": -0.6320954113323786
+            }
+          ],
+          "routePoints": [
+            {
+              "latitude": 35.21756399957514,
+              "longitude": -0.6224244427729064
+            },
+            {
+              "latitude": 35.21690539881199,
+              "longitude": -0.6149079401654168
+            },
+            {
+              "latitude": 35.21351480981426,
+              "longitude": -0.6154466758419864
+            },
+            {
+              "latitude": 35.204367130639596,
+              "longitude": -0.613642635264522
+            },
+            {
+              "latitude": 35.19957435684706,
+              "longitude": -0.6144485495233298
+            },
+            {
+              "latitude": 35.19300366822288,
+              "longitude": -0.6148996804615959
+            },
+            {
+              "latitude": 35.19245781174648,
+              "longitude": -0.6191429002547678
+            },
+            {
+              "latitude": 35.19320263913792,
+              "longitude": -0.6320954113323786
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Line 11",
+      "type": "bus",
+      "directions": [
+        {
+          "destination": "Quartier des 1000 logements",
+          "stops": [
+            {
+              "name": "station amir abd elkader",
+              "latitude": 35.19904182496456,
+              "longitude": -0.6314356855314297
+            },
+            {
+              "name": "pointe du prado",
+              "latitude": 35.19091292332031,
+              "longitude": -0.6341741957302572
+            },
+            {
+              "name": "faculte de medecine",
+              "latitude": 35.18206711782582,
+              "longitude": -0.6435537419974114
+            },
+            {
+              "name": "hopital du cancer",
+              "latitude": 35.17832459026671,
+              "longitude": -0.6476637403896525
+            },
+            {
+              "name": "gare de saqia al hamra",
+              "latitude": 35.1840070288446,
+              "longitude": -0.6514723498951858
+            },
+            {
+              "name": "la sap ferme",
+              "latitude": 35.17640907572982,
+              "longitude": -0.6708823266967979
+            },
+            {
+              "name": "coffee 5 juillet",
+              "latitude": 35.168389904538955,
+              "longitude": -0.6851202862379414
+            },
+            {
+              "name": "siege du departement",
+              "latitude": 35.162407686922236,
+              "longitude": -0.6945295214632076
+            },
+            {
+              "name": "Quartier des 1000 logements",
+              "latitude": 35.15536253231858,
+              "longitude": -0.7033820280275617
+            }
+          ],
+          "routePoints": [
+            {
+              "latitude": 35.19904182496456,
+              "longitude": -0.6314356855314297
+            },
+            {
+              "latitude": 35.19091292332031,
+              "longitude": -0.6341741957302572
+            },
+            {
+              "latitude": 35.18206711782582,
+              "longitude": -0.6435537419974114
+            },
+            {
+              "latitude": 35.17832459026671,
+              "longitude": -0.6476637403896525
+            },
+            {
+              "latitude": 35.1840070288446,
+              "longitude": -0.6514723498951858
+            },
+            {
+              "latitude": 35.17640907572982,
+              "longitude": -0.6708823266967979
+            },
+            {
+              "latitude": 35.168389904538955,
+              "longitude": -0.6851202862379414
+            },
+            {
+              "latitude": 35.162407686922236,
+              "longitude": -0.6945295214632076
+            },
+            {
+              "latitude": 35.15536253231858,
+              "longitude": -0.7033820280275617
+            }
+          ]
+        },
+        {
+          "destination": "station amir abd elkader",
+          "stops": [
+            {
+              "name": "Quartier des 1000 logements",
+              "latitude": 35.15536253231858,
+              "longitude": -0.7033820280275617
+            },
+            {
+              "name": "siege du departement",
+              "latitude": 35.162407686922236,
+              "longitude": -0.6945295214632076
+            },
+            {
+              "name": "coffee 5 juillet",
+              "latitude": 35.168389904538955,
+              "longitude": -0.6851202862379414
+            },
+            {
+              "name": "la sap ferme",
+              "latitude": 35.17640907572982,
+              "longitude": -0.6708823266967979
+            },
+            {
+              "name": "gare de saqia al hamra",
+              "latitude": 35.1840070288446,
+              "longitude": -0.6514723498951858
+            },
+            {
+              "name": "hopital du cancer",
+              "latitude": 35.17832459026671,
+              "longitude": -0.6476637403896525
+            },
+            {
+              "name": "faculte de medecine",
+              "latitude": 35.18206711782582,
+              "longitude": -0.6435537419974114
+            },
+            {
+              "name": "pointe du prado",
+              "latitude": 35.19091292332031,
+              "longitude": -0.6341741957302572
+            },
+            {
+              "name": "station amir abd elkader",
+              "latitude": 35.19904182496456,
+              "longitude": -0.6314356855314297
+            }
+          ],
+          "routePoints": [
+            {
+              "latitude": 35.15536253231858,
+              "longitude": -0.7033820280275617
+            },
+            {
+              "latitude": 35.162407686922236,
+              "longitude": -0.6945295214632076
+            },
+            {
+              "latitude": 35.168389904538955,
+              "longitude": -0.6851202862379414
+            },
+            {
+              "latitude": 35.17640907572982,
+              "longitude": -0.6708823266967979
+            },
+            {
+              "latitude": 35.1840070288446,
+              "longitude": -0.6514723498951858
+            },
+            {
+              "latitude": 35.17832459026671,
+              "longitude": -0.6476637403896525
+            },
+            {
+              "latitude": 35.18206711782582,
+              "longitude": -0.6435537419974114
+            },
+            {
+              "latitude": 35.19091292332031,
+              "longitude": -0.6341741957302572
+            },
+            {
+              "latitude": 35.19904182496456,
+              "longitude": -0.6314356855314297
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Line 26",
+      "type": "bus",
+      "directions": [
+        {
+          "destination": "Balarabi",
+          "stops": [
+            {
+              "name": "station amir abd elkader",
+              "latitude": 35.19904182496456,
+              "longitude": -0.6314356855314297
+            },
+            {
+              "name": "pointe du prado",
+              "latitude": 35.19091292332031,
+              "longitude": -0.6341741957302572
+            },
+            {
+              "name": "Enclos municipal",
+              "latitude": 35.18460811911582,
+              "longitude": -0.6292766861354671
+            },
+            {
+              "name": "Conseil judiciaire",
+              "latitude": 35.18315263658626,
+              "longitude": -0.6215874348790917
+            },
+            {
+              "name": "zone industrielle",
+              "latitude": 35.17651736179949,
+              "longitude": -0.581694278004037
+            },
+            {
+              "name": "telmoni",
+              "latitude": 35.17324185128731,
+              "longitude": -0.5444034022622813
+            },
+            {
+              "name": "La ferme de Zidane",
+              "latitude": 35.178297518498994,
+              "longitude": -0.49548064258299945
+            },
+            {
+              "name": "Carrefour à quatre voies",
+              "latitude": 35.179216212181345,
+              "longitude": -0.452529085820439
+            },
+            {
+              "name": "Balarabi(la ferme)",
+              "latitude": 35.16009487083657,
+              "longitude": -0.4568246009405997
+            },
+            {
+              "name": "Balarabi",
+              "latitude": 35.15300687516591,
+              "longitude": -0.457379940419862
+            }
+          ],
+          "routePoints": [
+            {
+              "latitude": 35.19904182496456,
+              "longitude": -0.6314356855314297
+            },
+            {
+              "latitude": 35.19091292332031,
+              "longitude": -0.6341741957302572
+            },
+            {
+              "latitude": 35.18460811911582,
+              "longitude": -0.6292766861354671
+            },
+            {
+              "latitude": 35.18315263658626,
+              "longitude": -0.6215874348790917
+            },
+            {
+              "latitude": 35.17651736179949,
+              "longitude": -0.581694278004037
+            },
+            {
+              "latitude": 35.17324185128731,
+              "longitude": -0.5444034022622813
+            },
+            {
+              "latitude": 35.178297518498994,
+              "longitude": -0.49548064258299945
+            },
+            {
+              "latitude": 35.179216212181345,
+              "longitude": -0.452529085820439
+            },
+            {
+              "latitude": 35.16009487083657,
+              "longitude": -0.4568246009405997
+            },
+            {
+              "latitude": 35.15300687516591,
+              "longitude": -0.457379940419862
+            }
+          ]
+        },
+        {
+          "destination": "station amir abd elkader",
+          "stops": [
+            {
+              "name": "Balarabi",
+              "latitude": 35.15300687516591,
+              "longitude": -0.457379940419862
+            },
+            {
+              "name": "Balarabi(la ferme)",
+              "latitude": 35.16009487083657,
+              "longitude": -0.4568246009405997
+            },
+            {
+              "name": "Carrefour à quatre voies",
+              "latitude": 35.179216212181345,
+              "longitude": -0.452529085820439
+            },
+            {
+              "name": "La ferme de Zidane",
+              "latitude": 35.178297518498994,
+              "longitude": -0.49548064258299945
+            },
+            {
+              "name": "telmoni",
+              "latitude": 35.17324185128731,
+              "longitude": -0.5444034022622813
+            },
+            {
+              "name": "zone industrielle",
+              "latitude": 35.17651736179949,
+              "longitude": -0.581694278004037
+            },
+            {
+              "name": "Conseil judiciaire",
+              "latitude": 35.18315263658626,
+              "longitude": -0.6215874348790917
+            },
+            {
+              "name": "Enclos municipal",
+              "latitude": 35.18460811911582,
+              "longitude": -0.6292766861354671
+            },
+            {
+              "name": "pointe du prado",
+              "latitude": 35.19091292332031,
+              "longitude": -0.6341741957302572
+            },
+            {
+              "name": "station amir abd elkader",
+              "latitude": 35.19904182496456,
+              "longitude": -0.6314356855314297
+            }
+          ],
+          "routePoints": [
+            {
+              "latitude": 35.15300687516591,
+              "longitude": -0.457379940419862
+            },
+            {
+              "latitude": 35.16009487083657,
+              "longitude": -0.4568246009405997
+            },
+            {
+              "latitude": 35.179216212181345,
+              "longitude": -0.452529085820439
+            },
+            {
+              "latitude": 35.178297518498994,
+              "longitude": -0.49548064258299945
+            },
+            {
+              "latitude": 35.17324185128731,
+              "longitude": -0.5444034022622813
+            },
+            {
+              "latitude": 35.17651736179949,
+              "longitude": -0.581694278004037
+            },
+            {
+              "latitude": 35.18315263658626,
+              "longitude": -0.6215874348790917
+            },
+            {
+              "latitude": 35.18460811911582,
+              "longitude": -0.6292766861354671
+            },
+            {
+              "latitude": 35.19091292332031,
+              "longitude": -0.6341741957302572
+            },
+            {
+              "latitude": 35.19904182496456,
+              "longitude": -0.6314356855314297
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Line 27",
+      "type": "bus",
+      "directions": [
+        {
+          "destination": "douar obaich",
+          "stops": [
+            {
+              "name": "station amir abd elkader",
+              "latitude": 35.19904182496456,
+              "longitude": -0.6314356855314297
+            },
+            {
+              "name": "pointe du prado",
+              "latitude": 35.19091292332031,
+              "longitude": -0.6341741957302572
+            },
+            {
+              "name": "Enclos municipal",
+              "latitude": 35.18460811911582,
+              "longitude": -0.6292766861354671
+            },
+            {
+              "name": "Quartier d'Al-Hurriya",
+              "latitude": 35.17490629957114,
+              "longitude": -0.6198281145987129
+            },
+            {
+              "name": "Al-Khanaysheh",
+              "latitude": 35.166260720843425,
+              "longitude": -0.6102036793111766
+            },
+            {
+              "name": "carrefour",
+              "latitude": 35.138981247227996,
+              "longitude": -0.5860773698108003
+            },
+            {
+              "name": "douar obaich",
+              "latitude": 35.134177825375446,
+              "longitude": -0.5595949722237338
+            }
+          ],
+          "routePoints": [
+            {
+              "latitude": 35.19904182496456,
+              "longitude": -0.6314356855314297
+            },
+            {
+              "latitude": 35.19091292332031,
+              "longitude": -0.6341741957302572
+            },
+            {
+              "latitude": 35.18460811911582,
+              "longitude": -0.6292766861354671
+            },
+            {
+              "latitude": 35.17490629957114,
+              "longitude": -0.6198281145987129
+            },
+            {
+              "latitude": 35.166260720843425,
+              "longitude": -0.6102036793111766
+            },
+            {
+              "latitude": 35.138981247227996,
+              "longitude": -0.5860773698108003
+            },
+            {
+              "latitude": 35.134177825375446,
+              "longitude": -0.5595949722237338
+            }
+          ]
+        },
+        {
+          "destination": "station amir abd elkader",
+          "stops": [
+            {
+              "name": "douar obaich",
+              "latitude": 35.134177825375446,
+              "longitude": -0.5595949722237338
+            },
+            {
+              "name": "carrefour",
+              "latitude": 35.138981247227996,
+              "longitude": -0.5860773698108003
+            },
+            {
+              "name": "Al-Khanaysheh",
+              "latitude": 35.166260720843425,
+              "longitude": -0.6102036793111766
+            },
+            {
+              "name": "Quartier d'Al-Hurriya",
+              "latitude": 35.17490629957114,
+              "longitude": -0.6198281145987129
+            },
+            {
+              "name": "Enclos municipal",
+              "latitude": 35.18460811911582,
+              "longitude": -0.6292766861354671
+            },
+            {
+              "name": "pointe du prado",
+              "latitude": 35.19091292332031,
+              "longitude": -0.6341741957302572
+            },
+            {
+              "name": "station amir abd elkader",
+              "latitude": 35.19904182496456,
+              "longitude": -0.6314356855314297
+            }
+          ],
+          "routePoints": [
+            {
+              "latitude": 35.134177825375446,
+              "longitude": -0.5595949722237338
+            },
+            {
+              "latitude": 35.138981247227996,
+              "longitude": -0.5860773698108003
+            },
+            {
+              "latitude": 35.166260720843425,
+              "longitude": -0.6102036793111766
+            },
+            {
+              "latitude": 35.17490629957114,
+              "longitude": -0.6198281145987129
+            },
+            {
+              "latitude": 35.18460811911582,
+              "longitude": -0.6292766861354671
+            },
+            {
+              "latitude": 35.19091292332031,
+              "longitude": -0.6341741957302572
+            },
+            {
+              "latitude": 35.19904182496456,
+              "longitude": -0.6314356855314297
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Line 28",
+      "type": "bus",
+      "directions": [
+        {
+          "destination": "Sidi Hamadouche",
+          "stops":[
+            {
+              "name": "station amir abd elkader",
+              "latitude": 35.19904182496456,
+              "longitude": -0.6314356855314297
+            },
+            {
+              "name": "Faculté d'informatique",
+              "latitude": 35.209256128957605,
+              "longitude": -0.6193665344784273
+            },
+            {
+              "name": "galmi station",
+              "latitude": 35.21351480981426,
+              "longitude": -0.6154466758419864
+            },
+            {
+              "name": "Étude des terres agricoles",
+              "latitude": 35.217651570079155,
+              "longitude": -0.612789585414344
+            },
+            {
+              "name": "Banque nationale BNA",
+              "latitude": 35.226089216681146,
+              "longitude": -0.6115338489662792
+            },
+            {
+              "name": "Ferme Ben Turki",
+              "latitude": 35.236218007677635,
+              "longitude": -0.5999760055953508
+            },
+            {
+              "name": "Entree de Sidi Brahim",
+              "latitude": 35.255138079504405,
+              "longitude": -0.5769865869025305
+            },
+            {
+              "name": "Sidi Brahim centre",
+              "latitude": 35.2578016898644,
+              "longitude": -0.5654522131881801
+            },
+            {
+              "name": "Bobernas",
+              "latitude": 35.274755186459046,
+              "longitude": -0.5625634088211219
+            },
+            {
+              "name": "entree Sidi Hamadouche",
+              "latitude": 35.29661120909786,
+              "longitude": -0.5568298007750584
+            },
+            {
+              "name": "Sidi Hamadouche",
+              "latitude": 35.30067593664721,
+              "longitude": -0.5473785257578646
+            }
+          ],
+          "routePoints": [
+            {
+              "latitude": 35.19904182496456,
+              "longitude": -0.6314356855314297
+            },
+            {
+              "latitude": 35.209256128957605,
+              "longitude": -0.6193665344784273
+            },
+            {
+              "latitude": 35.21351480981426,
+              "longitude": -0.6154466758419864
+            },
+            {
+              "latitude": 35.217651570079155,
+              "longitude": -0.612789585414344
+            },
+            {
+              "latitude": 35.226089216681146,
+              "longitude": -0.6115338489662792
+            },
+            {
+              "latitude": 35.236218007677635,
+              "longitude": -0.5999760055953508
+            },
+            {
+              "latitude": 35.255138079504405,
+              "longitude": -0.5769865869025305
+            },
+            {
+              "latitude": 35.2578016898644,
+              "longitude": -0.5654522131881801
+            },
+            {
+              "latitude": 35.274755186459046,
+              "longitude": -0.5625634088211219
+            },
+            {
+              "latitude": 35.29661120909786,
+              "longitude": -0.5568298007750584
+            },
+            {
+              "latitude": 35.30067593664721,
+              "longitude": -0.5473785257578646
+            }
+          ]
+        },
+        {
+          "destination": "station amir abd elkader",
+          "stops": [
+            {
+              "name": "Sidi Hamadouche",
+              "latitude": 35.30067593664721,
+              "longitude": -0.5473785257578646
+            },
+            {
+              "name": "entree Sidi Hamadouche",
+              "latitude": 35.29661120909786,
+              "longitude": -0.5568298007750584
+            },
+            {
+              "name": "Bobernas",
+              "latitude": 35.274755186459046,
+              "longitude": -0.5625634088211219
+            },
+            {
+              "name": "Sidi Brahim centre",
+              "latitude": 35.2578016898644,
+              "longitude": -0.5654522131881801
+            },
+            {
+              "name": "Entree de Sidi Brahim",
+              "latitude": 35.255138079504405,
+              "longitude": -0.5769865869025305
+            },
+            {
+              "name": "Ferme Ben Turki",
+              "latitude": 35.236218007677635,
+              "longitude": -0.5999760055953508
+            },
+            {
+              "name": "Banque nationale BNA",
+              "latitude": 35.226089216681146,
+              "longitude": -0.6115338489662792
+            },
+            {
+              "name": "Étude des terres agricoles",
+              "latitude": 35.217651570079155,
+              "longitude": -0.612789585414344
+            },
+            {
+              "name": "galmi station",
+              "latitude": 35.21351480981426,
+              "longitude": -0.6154466758419864
+            },
+            {
+              "name": "Faculté d'informatique",
+              "latitude": 35.209256128957605,
+              "longitude": -0.6193665344784273
+            },
+            {
+              "name": "station amir abd elkader",
+              "latitude": 35.19904182496456,
+              "longitude": -0.6314356855314297
+            }
+          ],
+          "routePoints": [
+            {
+              "latitude": 35.30067593664721,
+              "longitude": -0.5473785257578646
+            },
+            {
+              "latitude": 35.29661120909786,
+              "longitude": -0.5568298007750584
+            },
+            {
+              "latitude": 35.274755186459046,
+              "longitude": -0.5625634088211219
+            },
+            {
+              "latitude": 35.2578016898644,
+              "longitude": -0.5654522131881801
+            },
+            {
+              "latitude": 35.255138079504405,
+              "longitude": -0.5769865869025305
+            },
+            {
+              "latitude": 35.236218007677635,
+              "longitude": -0.5999760055953508
+            },
+            {
+              "latitude": 35.226089216681146,
+              "longitude": -0.6115338489662792
+            },
+            {
+              "latitude": 35.217651570079155,
+              "longitude": -0.612789585414344
+            },
+            {
+              "latitude": 35.21351480981426,
+              "longitude": -0.6154466758419864
+            },
+            {
+              "latitude": 35.209256128957605,
+              "longitude": -0.6193665344784273
+            },
+            {
+              "latitude": 35.19904182496456,
+              "longitude": -0.6314356855314297
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

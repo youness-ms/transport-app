@@ -53,11 +53,10 @@ class _MapScreenState extends State<MapScreen> with WidgetsBindingObserver {
   LatLng? destinationPoint;
   Journey? selectedJourney;
   Set<String> transferStopNames = {};
-  PersistentBottomSheetController? journeySheetController;
   bool isRerouting = false;
 
   static const double offRouteDistance = 60;
-
+  bool journeyCardOpen = false;
 
 
   final MapController mapController = MapController();
@@ -279,78 +278,7 @@ class _MapScreenState extends State<MapScreen> with WidgetsBindingObserver {
       isRerouting = false;
     }
   }
-  void showJourneyCard(Journey journey) {
-    if (journeySheetController != null) {
-      return;
-    }
 
-    journeySheetController = showBottomSheet(
-      context: context,
-      builder: (context) {
-        return SafeArea(
-          child: Container(
-            width: double.infinity,
-            constraints: const BoxConstraints(
-              maxHeight: 450,
-            ),
-            decoration: const BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.vertical(
-                top: Radius.circular(20),
-              ),
-            ),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                // Drag handle
-                Padding(
-                  padding: const EdgeInsets.only(
-                    top: 10,
-                    bottom: 5,
-                  ),
-                  child: Container(
-                    width: 45,
-                    height: 5,
-                    decoration: BoxDecoration(
-                      color: Colors.grey,
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                  ),
-                ),
-
-                Expanded(
-                  child: SingleChildScrollView(
-                    padding: const EdgeInsets.all(20),
-                    child: Column(
-                      crossAxisAlignment:
-                      CrossAxisAlignment.start,
-                      children: [
-                        const Text(
-                          'Your Journey',
-                          style: TextStyle(
-                            fontSize: 24,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-
-                        const SizedBox(height: 15),
-
-                        ..._buildJourneyTimeline(journey),
-                      ],
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
-        );
-      },
-    );
-
-    journeySheetController!.closed.then((_) {
-      journeySheetController = null;
-    });
-  }
 
   @override
   void initState() {
@@ -428,12 +356,12 @@ class _MapScreenState extends State<MapScreen> with WidgetsBindingObserver {
 
     final nearbyStartStops = findNearbyStops(
       startPoint,
-      2000,
+      1000,
     );
 
     final nearbyDestinationStops = findNearbyStops(
       destinationPoint,
-      2000,
+      1000,
     );
 
     final route = planner.buildJourneyWithWalking(
@@ -806,7 +734,6 @@ class _MapScreenState extends State<MapScreen> with WidgetsBindingObserver {
 
               if (journey != null) {
                 fitJourneyOnMap(journey);
-                showJourneyCard(journey);
               }
             },
           ),
@@ -1004,18 +931,99 @@ class _MapScreenState extends State<MapScreen> with WidgetsBindingObserver {
 
           ],
         ),
-
           if (selectedJourney != null &&
-              selectedJourney!.segments
-                  .any((segment) => segment is TransportSegment) &&
-              journeySheetController == null)
+              selectedJourney!.segments.any(
+                    (segment) => segment is TransportSegment,
+              ) &&
+              journeyCardOpen)
+            Positioned(
+              left: 0,
+              right: 0,
+              bottom: 0,
+              top: 200,
+              child: DraggableScrollableSheet(
+                initialChildSize: 0.35,
+                minChildSize: 0.08,
+                maxChildSize: 0.75,
+                snap: true,
+                snapSizes: const [0.08, 0.35, 0.75],
+                builder: (context, scrollController) {
+                  return Container(
+                    decoration: const BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.vertical(
+                        top: Radius.circular(20),
+                      ),
+                      boxShadow: [
+                        BoxShadow(
+                          blurRadius: 10,
+                          color: Colors.black26,
+                        ),
+                      ],
+                    ),
+                    child: ListView(
+                      controller: scrollController,
+                      padding: const EdgeInsets.all(20),
+                      children: [
+                        Center(
+                          child: Container(
+                            width: 45,
+                            height: 5,
+                            decoration: BoxDecoration(
+                              color: Colors.grey,
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                          ),
+                        ),
+
+                        const SizedBox(height: 15),
+
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            const Text(
+                              'Your Journey',
+                              style: TextStyle(
+                                fontSize: 24,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            IconButton(
+                              onPressed: () {
+                                setState(() {
+                                  journeyCardOpen = false;
+                                });
+                              },
+                              icon: const Icon(
+                                Icons.keyboard_arrow_down,
+                              ),
+                            ),
+                          ],
+                        ),
+
+                        const SizedBox(height: 15),
+
+                        ..._buildJourneyTimeline(selectedJourney!),
+                      ],
+                    ),
+                  );
+                },
+              ),
+            ),
+          if (selectedJourney != null &&
+              selectedJourney!.segments.any(
+                    (segment) => segment is TransportSegment,
+              ) &&
+              !journeyCardOpen)
             Positioned(
               left: 20,
               right: 20,
               bottom: 20,
               child: ElevatedButton.icon(
                 onPressed: () {
-                  showJourneyCard(selectedJourney!);
+                  setState(() {
+                    journeyCardOpen = true;
+                  });
                 },
                 icon: const Icon(Icons.directions),
                 label: const Text('Show journey'),

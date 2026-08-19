@@ -37,7 +37,7 @@ class _AiScreenState extends State<AiScreen> {
 
 
 
-  final void Function(AiPlace place) onViewPlace;
+  //final void Function(AiPlace place) onViewPlace;
 
   Future<void> loadAiPlaces() async {
     final places =

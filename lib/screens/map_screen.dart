@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:sensors_plus/sensors_plus.dart';
 import 'dart:math' as math;
 import '../models/famous_place.dart';
+import 'ai_screen.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
@@ -997,6 +998,44 @@ class _MapScreenState extends State<MapScreen> with WidgetsBindingObserver {
                               icon: const Icon(
                                 Icons.keyboard_arrow_down,
                               ),
+                            ),
+                            IconButton(
+                              icon: const Icon(Icons.smart_toy),
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (_) => AiScreen(
+                                      onGoToPlace: (latitude, longitude) async {
+                                        final destination = LatLng(
+                                          latitude,
+                                          longitude,
+                                        );
+
+                                        destinationPoint = destination;
+
+                                        final journey =
+                                        await calculateJourneyToPoint(
+                                          destination,
+                                        );
+
+                                        if (!mounted) return;
+
+                                        setState(() {
+                                          selectedJourney = journey;
+                                          updateTransferStops(journey);
+                                        });
+
+                                        if (journey != null) {
+                                          fitJourneyOnMap(journey);
+                                        }
+
+                                        Navigator.pop(context);
+                                      },
+                                    ),
+                                  ),
+                                );
+                              },
                             ),
                           ],
                         ),

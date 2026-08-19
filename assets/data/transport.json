@@ -1223,90 +1223,105 @@
   ],
   "places": [
     {
+      "id": 1,
       "name": "Place 1er Novembre (Place Carnot)",
       "category": "landmark",
       "latitude": 35.19039,
       "longitude": -0.63310
     },
     {
+      "id": 2,
       "name": "Théâtre Régional de Sidi Bel Abbès",
       "category": "culture",
       "latitude": 35.19112,
       "longitude": -0.63322
     },
     {
+      "id": 3,
       "name": "Jardin Public",
       "category": "park",
       "latitude": 35.19009,
       "longitude": -0.64229
     },
     {
+      "id": 4,
       "name": "Stade 24 Février 1956",
       "category": "sports",
       "latitude": 35.18503,
       "longitude": -0.62214
     },
     {
+      "id": 5,
       "name": "Place 5 Juillet Rocher",
       "category": "park",
       "latitude": 35.21452,
       "longitude": -0.61067
     },
     {
+      "id": 6,
       "name": "Gare de Sidi Bel Abbès",
       "category": "transport",
       "latitude": 35.19929,
       "longitude": -0.63840
     },
     {
+      "id": 7,
       "name": "Musée du Moudjahid",
       "category": "museum",
       "latitude": 35.17935,
       "longitude": -0.63823
     },
     {
+      "id": 8,
       "name": "Musée d'Agriculture de Sidi Bel Abbès",
       "category": "museum",
       "latitude": 35.17853,
       "longitude": -0.66030
     },
     {
+      "id": 9,
       "name": "Université Djillali Liabès - Faculté des Sciences Exactes",
       "category": "education",
       "latitude": 35.20296,
       "longitude": -0.63996
     },
     {
+      "id": 10,
       "name": "Cinema Vox",
       "category": "entertainment",
       "latitude": 35.19266,
       "longitude": -0.63407
     },
     {
+      "id": 11,
       "name": "Mosquée Beni Amer",
       "category": "religious",
       "latitude": 35.20463,
       "longitude": -0.61743
     },
     {
+      "id": 12,
       "name": "Mosquée Ibrahim el-khalil",
       "category": "religious",
       "latitude": 35.20953,
       "longitude": -0.61458
     },
     {
+      "id": 13,
       "name": "Petit Paris",
       "category": "cafe",
       "latitude": 35.18231,
       "longitude": -0.62624
     },
     {
+      "id": 14,
       "name": "Boulangerie Bouadjaj",
       "category": "food",
       "latitude": 35.18076,
       "longitude": -0.62749
     },
     {
+      "id": 15,
       "name": "Café Palmier",
       "category": "cafe",
       "latitude": 35.21789,

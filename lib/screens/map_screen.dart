@@ -464,6 +464,27 @@ class _MapScreenState extends State<MapScreen> with WidgetsBindingObserver {
     }
   }
 
+  List<Polyline<Object>> buildSelectedLinePolylines() {
+    if (selectedLine == null) {
+      return [];
+    }
+
+    return selectedLine!.directions.map((direction) {
+      return Polyline<Object>(
+        points: direction.routePoints
+            .map(
+              (point) => LatLng(
+            point.latitude,
+            point.longitude,
+          ),
+        )
+            .toList(),
+        strokeWidth: 5,
+        color: Colors.blue,
+      );
+    }).toList();
+  }
+
   Future<void> goToMyLocation() async {
 
     try {
@@ -682,28 +703,43 @@ class _MapScreenState extends State<MapScreen> with WidgetsBindingObserver {
                             context: context,
                             builder: (context) {
                               return SafeArea(
-                                child: Padding(
-                                  padding: const EdgeInsets.all(20),
-                                  child: Column(
-                                    mainAxisSize: MainAxisSize.min,
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Text(
-                                        place.name,
-                                        style: const TextStyle(
-                                          fontSize: 22,
-                                          fontWeight: FontWeight.bold,
+                                child: SizedBox(
+                                  width: double.infinity,
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(20),
+                                    child: Column(
+                                      mainAxisSize: MainAxisSize.min,
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          place.name,
+                                          style: const TextStyle(
+                                            fontSize: 22,
+                                            fontWeight: FontWeight.bold,
+                                          ),
                                         ),
-                                      ),
-                                      const SizedBox(height: 8),
-                                      Text(
-                                        place.category,
-                                        style: TextStyle(
-                                          fontSize: 16,
-                                          color: Colors.grey.shade600,
+
+                                        const SizedBox(height: 8),
+
+                                        Text(
+                                          'ID: ${place.id}',
+                                          style: TextStyle(
+                                            fontSize: 14,
+                                            color: Colors.grey.shade600,
+                                          ),
                                         ),
-                                      ),
-                                    ],
+
+                                        const SizedBox(height: 4),
+
+                                        Text(
+                                          place.category,
+                                          style: TextStyle(
+                                            fontSize: 16,
+                                            color: Colors.grey.shade600,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
                                   ),
                                 ),
                               );
@@ -769,9 +805,12 @@ class _MapScreenState extends State<MapScreen> with WidgetsBindingObserver {
             ),
 
             PolylineLayer(
-              polylines: selectedJourney == null
-                  ? <Polyline<Object>>[]
-                  : buildJourneyPolylines(selectedJourney!),
+              polylines: [
+                if (selectedJourney != null)
+                  ...buildJourneyPolylines(selectedJourney!),
+
+                ...buildSelectedLinePolylines(),
+              ],
             ),
 
           ],
@@ -897,6 +936,7 @@ class _MapScreenState extends State<MapScreen> with WidgetsBindingObserver {
                   clearDestination();
                   selectedJourney = null;
                   isRerouting = false;
+                  selectedLine = null;
                 },
                 child: const Icon(Icons.clear),
               ),

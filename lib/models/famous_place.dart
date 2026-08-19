@@ -1,10 +1,12 @@
 class FamousPlace {
+  final int id;
   final String name;
   final String category;
   final double latitude;
   final double longitude;
 
   FamousPlace({
+    required this.id,
     required this.name,
     required this.category,
     required this.latitude,
@@ -13,6 +15,7 @@ class FamousPlace {
 
   factory FamousPlace.fromJson(Map<String, dynamic> json) {
     return FamousPlace(
+      id: (json['id'] as num).toInt(),
       name: json['name'] as String,
       category: json['category'] as String,
       latitude: (json['latitude'] as num).toDouble(),

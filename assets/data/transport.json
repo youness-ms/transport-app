@@ -1219,6 +1219,422 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Tramway Sidi Bel Abbès",
+      "type": "tram",
+      "directions": [
+        {
+          "destination": "Cascade",
+          "stops": [
+            {
+              "name": "Gare Routière Sud",
+              "latitude": 35.18529,
+              "longitude": -0.65061
+            },
+            {
+              "name": "Jardin",
+              "latitude": 35.18831,
+              "longitude": -0.64388
+            },
+            {
+              "name": "4 Horloges",
+              "latitude": 35.19067,
+              "longitude": -0.63453
+            },
+            {
+              "name": "Émir Abdelkader",
+              "latitude": 35.191217,
+              "longitude": -0.6298798
+            },
+            {
+              "name": "Stade Adda Boudjelal",
+              "latitude": 35.19176,
+              "longitude": -0.62518
+            },
+            {
+              "name": "Station Maternité",
+              "latitude": 35.19248,
+              "longitude": -0.61917
+            },
+            {
+              "name": "La Radio",
+              "latitude": 35.19633,
+              "longitude": -0.62084
+            },
+            {
+              "name": "Houari Boumediene",
+              "latitude": 35.19969,
+              "longitude": -0.62476
+            },
+            {
+              "name": "La Daïra",
+              "latitude": 35.20598,
+              "longitude": -0.62647
+            },
+            {
+              "name": "El Wiam",
+              "latitude": 35.21139,
+              "longitude": -0.62793
+            },
+            {
+              "name": "Sidi Djilali",
+              "latitude": 35.21594,
+              "longitude": -0.62357
+            },
+            {
+              "name": "AADL Benhamouda",
+              "latitude": 35.21838,
+              "longitude": -0.62756
+            },
+            {
+              "name": "Gare Routière Nord",
+              "latitude": 35.22313,
+              "longitude": -0.62945
+            },
+            {
+              "name": "Gare Ferroviaire",
+              "latitude": 35.22759,
+              "longitude": -0.62693
+            },
+            {
+              "name": "Campus",
+              "latitude": 35.22178,
+              "longitude": -0.63748
+            },
+            {
+              "name": "Centre Ennaâma",
+              "latitude": 35.21689,
+              "longitude": -0.63854
+            },
+            {
+              "name": "Faculté de Droit",
+              "latitude": 35.21542,
+              "longitude": -0.63275
+            },
+            {
+              "name": "L'Environnement",
+              "latitude": 35.21622,
+              "longitude": -0.62672
+            },
+            {
+              "name": "Benhammouda",
+              "latitude": 35.21743,
+              "longitude": -0.6211
+            },
+            {
+              "name": "Les Frères Adnane",
+              "latitude": 35.21682,
+              "longitude": -0.61479
+            },
+            {
+              "name": "Gare Routière Est",
+              "latitude": 35.21327,
+              "longitude": -0.61571
+            },
+            {
+              "name": "Cascade",
+              "latitude": 35.20903,
+              "longitude": -0.61628
+            }
+          ],
+          "routePoints": [
+            {
+              "latitude": 35.18529,
+              "longitude": -0.65061
+            },
+            {
+              "latitude": 35.18831,
+              "longitude": -0.64388
+            },
+            {
+              "latitude": 35.19067,
+              "longitude": -0.63453
+            },
+            {
+              "latitude": 35.191217,
+              "longitude": -0.6298798
+            },
+            {
+              "latitude": 35.19176,
+              "longitude": -0.62518
+            },
+            {
+              "latitude": 35.19248,
+              "longitude": -0.61917
+            },
+            {
+              "latitude": 35.19633,
+              "longitude": -0.62084
+            },
+            {
+              "latitude": 35.19969,
+              "longitude": -0.62476
+            },
+            {
+              "latitude": 35.20598,
+              "longitude": -0.62647
+            },
+            {
+              "latitude": 35.21139,
+              "longitude": -0.62793
+            },
+            {
+              "latitude": 35.21594,
+              "longitude": -0.62357
+            },
+            {
+              "latitude": 35.21838,
+              "longitude": -0.62756
+            },
+            {
+              "latitude": 35.22313,
+              "longitude": -0.62945
+            },
+            {
+              "latitude": 35.22759,
+              "longitude": -0.62693
+            },
+            {
+              "latitude": 35.22178,
+              "longitude": -0.63748
+            },
+            {
+              "latitude": 35.21689,
+              "longitude": -0.63854
+            },
+            {
+              "latitude": 35.21542,
+              "longitude": -0.63275
+            },
+            {
+              "latitude": 35.21622,
+              "longitude": -0.62672
+            },
+            {
+              "latitude": 35.21743,
+              "longitude": -0.6211
+            },
+            {
+              "latitude": 35.21682,
+              "longitude": -0.61479
+            },
+            {
+              "latitude": 35.21327,
+              "longitude": -0.61571
+            },
+            {
+              "latitude": 35.20903,
+              "longitude": -0.61628
+            }
+          ]
+        },
+        {
+          "destination": "Gare Routière Sud",
+          "stops": [
+            {
+              "name": "Cascade",
+              "latitude": 35.20903,
+              "longitude": -0.61628
+            },
+            {
+              "name": "Gare Routière Est",
+              "latitude": 35.21327,
+              "longitude": -0.61571
+            },
+            {
+              "name": "Les Frères Adnane",
+              "latitude": 35.21682,
+              "longitude": -0.61479
+            },
+            {
+              "name": "Benhammouda",
+              "latitude": 35.21743,
+              "longitude": -0.6211
+            },
+            {
+              "name": "L'Environnement",
+              "latitude": 35.21622,
+              "longitude": -0.62672
+            },
+            {
+              "name": "Faculté de Droit",
+              "latitude": 35.21542,
+              "longitude": -0.63275
+            },
+            {
+              "name": "Centre Ennaâma",
+              "latitude": 35.21689,
+              "longitude": -0.63854
+            },
+            {
+              "name": "Campus",
+              "latitude": 35.22178,
+              "longitude": -0.63748
+            },
+            {
+              "name": "Gare Ferroviaire",
+              "latitude": 35.22759,
+              "longitude": -0.62693
+            },
+            {
+              "name": "Gare Routière Nord",
+              "latitude": 35.22313,
+              "longitude": -0.62945
+            },
+            {
+              "name": "AADL Benhamouda",
+              "latitude": 35.21838,
+              "longitude": -0.62756
+            },
+            {
+              "name": "Sidi Djilali",
+              "latitude": 35.21594,
+              "longitude": -0.62357
+            },
+            {
+              "name": "El Wiam",
+              "latitude": 35.21139,
+              "longitude": -0.62793
+            },
+            {
+              "name": "La Daïra",
+              "latitude": 35.20598,
+              "longitude": -0.62647
+            },
+            {
+              "name": "Houari Boumediene",
+              "latitude": 35.19969,
+              "longitude": -0.62476
+            },
+            {
+              "name": "La Radio",
+              "latitude": 35.19633,
+              "longitude": -0.62084
+            },
+            {
+              "name": "Station Maternité",
+              "latitude": 35.19248,
+              "longitude": -0.61917
+            },
+            {
+              "name": "Stade Adda Boudjelal",
+              "latitude": 35.19176,
+              "longitude": -0.62518
+            },
+            {
+              "name": "Émir Abdelkader",
+              "latitude": 35.191217,
+              "longitude": -0.6298798
+            },
+            {
+              "name": "4 Horloges",
+              "latitude": 35.19067,
+              "longitude": -0.63453
+            },
+            {
+              "name": "Jardin",
+              "latitude": 35.18831,
+              "longitude": -0.64388
+            },
+            {
+              "name": "Gare Routière Sud",
+              "latitude": 35.18529,
+              "longitude": -0.65061
+            }
+          ],
+          "routePoints": [
+            {
+              "latitude": 35.20903,
+              "longitude": -0.61628
+            },
+            {
+              "latitude": 35.21327,
+              "longitude": -0.61571
+            },
+            {
+              "latitude": 35.21682,
+              "longitude": -0.61479
+            },
+            {
+              "latitude": 35.21743,
+              "longitude": -0.6211
+            },
+            {
+              "latitude": 35.21622,
+              "longitude": -0.62672
+            },
+            {
+              "latitude": 35.21542,
+              "longitude": -0.63275
+            },
+            {
+              "latitude": 35.21689,
+              "longitude": -0.63854
+            },
+            {
+              "latitude": 35.22178,
+              "longitude": -0.63748
+            },
+            {
+              "latitude": 35.22759,
+              "longitude": -0.62693
+            },
+            {
+              "latitude": 35.22313,
+              "longitude": -0.62945
+            },
+            {
+              "latitude": 35.21838,
+              "longitude": -0.62756
+            },
+            {
+              "latitude": 35.21594,
+              "longitude": -0.62357
+            },
+            {
+              "latitude": 35.21139,
+              "longitude": -0.62793
+            },
+            {
+              "latitude": 35.20598,
+              "longitude": -0.62647
+            },
+            {
+              "latitude": 35.19969,
+              "longitude": -0.62476
+            },
+            {
+              "latitude": 35.19633,
+              "longitude": -0.62084
+            },
+            {
+              "latitude": 35.19248,
+              "longitude": -0.61917
+            },
+            {
+              "latitude": 35.19176,
+              "longitude": -0.62518
+            },
+            {
+              "latitude": 35.191217,
+              "longitude": -0.6298798
+            },
+            {
+              "latitude": 35.19067,
+              "longitude": -0.63453
+            },
+            {
+              "latitude": 35.18831,
+              "longitude": -0.64388
+            },
+            {
+              "latitude": 35.18529,
+              "longitude": -0.65061
+            }
+          ]
+        }
+      ]
     }
   ],
   "places": [

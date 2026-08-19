@@ -53,7 +53,7 @@ class _MapScreenState extends State<MapScreen> with WidgetsBindingObserver {
   LatLng? destinationPoint;
   Journey? selectedJourney;
   Set<String> transferStopNames = {};
-
+  PersistentBottomSheetController? journeySheetController;
   bool isRerouting = false;
 
   static const double offRouteDistance = 60;
@@ -61,6 +61,119 @@ class _MapScreenState extends State<MapScreen> with WidgetsBindingObserver {
 
 
   final MapController mapController = MapController();
+  List<Widget> _buildJourneyTimeline(Journey journey) {
+    final widgets = <Widget>[];
+
+    for (int i = 0; i < journey.segments.length; i++) {
+      final segment = journey.segments[i];
+
+      // =========================
+      // WALKING
+      // =========================
+      if (segment is WalkingSegment) {
+        widgets.add(
+          ListTile(
+            contentPadding: EdgeInsets.zero,
+            leading: const Icon(
+              Icons.directions_walk,
+              color: Colors.green,
+            ),
+            title: const Text(
+              'Walk',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            subtitle: const Text(
+              'Walk to the next stop',
+            ),
+          ),
+        );
+
+        continue;
+      }
+
+      // =========================
+      // BUS
+      // =========================
+      if (segment is TransportSegment) {
+        widgets.add(
+          ListTile(
+            contentPadding: EdgeInsets.zero,
+            leading: const Icon(
+              Icons.directions_bus,
+              color: Colors.blue,
+            ),
+            title: Text(
+              segment.line.name,
+              style: const TextStyle(
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            subtitle: Text(
+              '${segment.fromStop.name} → '
+                  '${segment.toStop.name}',
+            ),
+          ),
+        );
+
+        // Check whether the next transport segment
+        // means the passenger changes buses.
+        if (i + 1 < journey.segments.length &&
+            journey.segments[i + 1] is TransportSegment) {
+          final next =
+          journey.segments[i + 1] as TransportSegment;
+
+          if (next.fromStop.name ==
+              segment.toStop.name) {
+            widgets.add(
+              const Padding(
+                padding: EdgeInsets.only(
+                  left: 16,
+                  top: 4,
+                  bottom: 4,
+                ),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.swap_horiz,
+                      color: Colors.orange,
+                    ),
+                    SizedBox(width: 8),
+                    Text(
+                      'Change bus here',
+                      style: TextStyle(
+                        color: Colors.orange,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            );
+          }
+        }
+      }
+    }
+
+    widgets.add(
+      const ListTile(
+        contentPadding: EdgeInsets.zero,
+        leading: Icon(
+          Icons.location_on,
+          color: Colors.red,
+        ),
+        title: Text(
+          'Destination',
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ),
+    );
+
+    return widgets;
+  }
 
   void updateTransferStops(Journey? journey) {
     final transfers = <String>{};
@@ -166,6 +279,79 @@ class _MapScreenState extends State<MapScreen> with WidgetsBindingObserver {
       isRerouting = false;
     }
   }
+  void showJourneyCard(Journey journey) {
+    if (journeySheetController != null) {
+      return;
+    }
+
+    journeySheetController = showBottomSheet(
+      context: context,
+      builder: (context) {
+        return SafeArea(
+          child: Container(
+            width: double.infinity,
+            constraints: const BoxConstraints(
+              maxHeight: 450,
+            ),
+            decoration: const BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.vertical(
+                top: Radius.circular(20),
+              ),
+            ),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                // Drag handle
+                Padding(
+                  padding: const EdgeInsets.only(
+                    top: 10,
+                    bottom: 5,
+                  ),
+                  child: Container(
+                    width: 45,
+                    height: 5,
+                    decoration: BoxDecoration(
+                      color: Colors.grey,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                ),
+
+                Expanded(
+                  child: SingleChildScrollView(
+                    padding: const EdgeInsets.all(20),
+                    child: Column(
+                      crossAxisAlignment:
+                      CrossAxisAlignment.start,
+                      children: [
+                        const Text(
+                          'Your Journey',
+                          style: TextStyle(
+                            fontSize: 24,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+
+                        const SizedBox(height: 15),
+
+                        ..._buildJourneyTimeline(journey),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        );
+      },
+    );
+
+    journeySheetController!.closed.then((_) {
+      journeySheetController = null;
+    });
+  }
+
   @override
   void initState() {
     super.initState();
@@ -242,12 +428,12 @@ class _MapScreenState extends State<MapScreen> with WidgetsBindingObserver {
 
     final nearbyStartStops = findNearbyStops(
       startPoint,
-      1000,
+      2000,
     );
 
     final nearbyDestinationStops = findNearbyStops(
       destinationPoint,
-      1000,
+      2000,
     );
 
     final route = planner.buildJourneyWithWalking(
@@ -601,6 +787,7 @@ class _MapScreenState extends State<MapScreen> with WidgetsBindingObserver {
             onTap: (tapPosition, point) {
               setState(() {
                 selectedLine = null;
+                selectedDirection = null;
                 selectedStop = null;
               });
             },
@@ -619,6 +806,7 @@ class _MapScreenState extends State<MapScreen> with WidgetsBindingObserver {
 
               if (journey != null) {
                 fitJourneyOnMap(journey);
+                showJourneyCard(journey);
               }
             },
           ),
@@ -756,6 +944,7 @@ class _MapScreenState extends State<MapScreen> with WidgetsBindingObserver {
                   },
                 ),
 
+
                 // Destination marker
                 if (destinationPoint != null)
                   Marker(
@@ -816,6 +1005,22 @@ class _MapScreenState extends State<MapScreen> with WidgetsBindingObserver {
           ],
         ),
 
+          if (selectedJourney != null &&
+              selectedJourney!.segments
+                  .any((segment) => segment is TransportSegment) &&
+              journeySheetController == null)
+            Positioned(
+              left: 20,
+              right: 20,
+              bottom: 20,
+              child: ElevatedButton.icon(
+                onPressed: () {
+                  showJourneyCard(selectedJourney!);
+                },
+                icon: const Icon(Icons.directions),
+                label: const Text('Show journey'),
+              ),
+            ),
           // SEARCH BUTTON
           Positioned(
             top: 20,
@@ -1019,6 +1224,7 @@ class _MapScreenState extends State<MapScreen> with WidgetsBindingObserver {
                                 setState(() {
                                   selectedStop = null;
                                   selectedLine = null;
+                                  selectedDirection = null;
                                 });
                               },
                               icon: const Icon(Icons.close),
